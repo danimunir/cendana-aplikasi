@@ -23,13 +23,13 @@
 define( 'DB_NAME', 'wp' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'admin' );
 
 /** Database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'admin123' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', 'cendana-db.ceaakqnmv4ui.us-west-2.rds.amazonaws.com' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -83,7 +83,7 @@ define( 'WP_DEBUG', false );
 
 /* Add any custom values between this line and the "stop editing" line. */
 
-
+if ( ! defined( 'FS_METHOD' ) ) define( 'FS_METHOD', 'direct' ); 
 
 /* That's all, stop editing! Happy publishing. */
 
